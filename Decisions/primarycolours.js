@@ -12,16 +12,18 @@ var colour2 = prompt("Enter the second colour: ")
 // output mixed colour based on input
 // red/yellow = orange, blue/red = violet, blue/yellow = green
 
-if ((colour1 === "red" && colour2 === "yellow") ||
-    (colour1 === "yellow" && colour2 === "red")) {
-    // red/yellow mix
-    console.log("orange")
-} else if ((colour1 === "blue" && colour2 === "red") ||
-    (colour1 === "red" && colour2 === "blue")) {
+if (colour1 === "red") {
+    if (colour2 === "yellow") {
+        // red/yellow mix
+        console.log("orange")
+    } else {
+        // blue/red mix
+        console.log("violet")
+    }
+} else if (colour1 === "blue") {
     // blue/red mix
     console.log("violet")
-} else if ((colour1 === "blue" && colour2 === "yellow") ||
-    (colour1 === "yellow" && colour2 === "blue")) {
+} else if (colour1 === "yellow") {
     // blue/yellow mix
     console.log("green")
 }
