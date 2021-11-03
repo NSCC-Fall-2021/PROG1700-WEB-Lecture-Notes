@@ -29,7 +29,7 @@ function highLowGame(levelOptions) {
     // end of loop
 
 
-    return [guess === secretNumber, secretNumber]
+    return {won: guess === secretNumber, secret: secretNumber}
 }
 
 // keep playing until the user is done
@@ -49,7 +49,7 @@ do {
     console.log(`Level: ${currentLevel}`)
     console.log(`  You have ${levelOptions.tries} tries to guess a number between ${levelOptions.min} and ${levelOptions.max}.`)
 
-    var [won, secret] = highLowGame(levelOptions);
+    var {won, secret} = highLowGame(levelOptions);
 
     // winner if guessed correctly by the 10th guess
     if (won) {
