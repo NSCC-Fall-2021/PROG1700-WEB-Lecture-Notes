@@ -15,8 +15,6 @@ function setup() {
 // insert some data
 function insertData() {
 
-    setup();
-
     var records = [
         ['w000001', 'john', 'smith'],
         ['w000002', 'jane', 'doe'],
@@ -103,16 +101,8 @@ function deleteData() {
     fs.rmSync('updated_db.txt');
 }
 
-// only execute when run as a script
-if (require.main === module) {
-    setup();
-    insertData();
-    selectData();
-    updateData();
-    deleteData();
-}
-
-const db = {
-    insertData, selectData, updateData, deleteData
-};
-module.exports = db;
+setup();
+insertData();
+selectData();
+updateData();
+deleteData();
