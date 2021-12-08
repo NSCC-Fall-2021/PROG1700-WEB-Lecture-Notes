@@ -1,0 +1,22 @@
+{
+  "name": "prog1700-web-lecture-notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NSCC-Fall-2021/PROG1700-WEB-Lecture-Notes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NSCC-Fall-2021/PROG1700-WEB-Lecture-Notes/issues"
+  },
+  "homepage": "https://github.com/NSCC-Fall-2021/PROG1700-WEB-Lecture-Notes#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
